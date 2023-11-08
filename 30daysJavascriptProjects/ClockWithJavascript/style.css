@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Avro:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    font-family: 'Arvo',serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1111;
+}
+.heading{
+    position: relative;
+    color: #fff;
+}
+.clock{
+    width: 500px ;
+    height: 450px;
+    background-image: url("imgs/clock.png") ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 9999 ;
+}
+.clock .hour,
+.clock .min,
+.clock .sec{
+position: absolute;
+}
+.clock .hour,
+.hr{
+    width: 160px;
+    height: 160px;
+}
+
+.clock .min,
+.mn {
+    width: 190px;
+    height: 190px;
+    margin-left: 62px;
+}
+.clock .sec,
+.sc{
+    width: 240px;
+    height: 240px;
+
+}
+.hr,
+.min,
+.sc{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.hr::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 80px;
+    background: rgb(14, 2, 44);
+    border-radius: 6px 6px 0 0;
+    z-index: 10;
+}
+.mn::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: rgb(4, 4, 4);
+    border-radius: 6px 6px 0 0;
+    z-index: 11;
+}
+.sc::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+    z-index: 11;
+}

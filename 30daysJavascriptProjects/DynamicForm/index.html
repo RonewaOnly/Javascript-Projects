@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynmaic Form Fields Using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <h2 class="heading">
+            Dynamic Form Fields Using Javascript
+        </h2>
+        <div id="survey_options">
+            <input type="text" name="survey_options[]" size="50" class="survey_options" placeholder="name">
+            <input type="text" name="survey_options[]" size="50" class="survey_options" placeholder="Email">
+            <input type="text" name="survey_options[]" size="50" class="survey_options" placeholder="Anothor Field">
+
+        </div>
+        <div class="controls">
+            <a href="#" id="add_fields">Add</a>
+            <a href="#" id="remove_fields">Remove</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
